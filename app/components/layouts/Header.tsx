@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,7 +22,7 @@ const Header = () => {
         <Link href="/">
           <Image src="/header.png" alt="Logo" width={150} height={50} />
         </Link>
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-8 items-center">
           <Link
             href="/guide"
             className="text-gray-600 hover:text-orange-500 transition duration-200"
@@ -35,16 +36,17 @@ const Header = () => {
             ログイン
           </Link>
           <Link
-            href="/settings"
-            className="text-gray-600 hover:text-orange-500 transition duration-200"
-          >
-            ぴったり設定
-          </Link>
-          <Link
             href="/about"
             className="text-gray-600 hover:text-orange-500 transition duration-200"
           >
-            運営団体
+            会員登録
+          </Link>
+
+          <Link href="/about">
+            <Avatar>
+              <AvatarImage src="https://github.com/shadcn.png" />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
           </Link>
         </nav>
         <button
@@ -77,17 +79,12 @@ const Header = () => {
           >
             ログイン
           </Link>
-          <Link
-            href="/settings"
-            className="text-gray-600 hover:text-orange-500 transition duration-200"
-          >
-            ぴったり設定
-          </Link>
+
           <Link
             href="/about"
             className="text-gray-600 hover:text-orange-500 transition duration-200"
           >
-            運営団体
+            会員登録
           </Link>
         </nav>
       </div>
