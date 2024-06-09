@@ -53,7 +53,7 @@ const QuestionSection = (props: { question: Question; choices: Choice[] }) => {
   return (
     <div className="">
       {!showCommentary ? (
-        <div className="max-w-[1000px]w-full flex flex-col items-center justify-center min-h-screen overflow-hidden">
+        <div className="max-w-[1000px] w-full flex flex-col items-center justify-center min-h-screen overflow-hidden shadow-md">
           {showOverlay && (
             <div className="fixed top-0 left-0 right-0 bottom-20 flex items-center justify-center z-50">
               <div
@@ -90,19 +90,22 @@ const QuestionSection = (props: { question: Question; choices: Choice[] }) => {
           </div>
         </div>
       ) : (
-        <div className="w-full pt-20 min-h-screen h-full flex flex-col">
-          <div className="h-full bg-white p-4 rounded">
-            <p>{props.question.text}</p>
+        <div className="w-full pt-20 h-full flex flex-col max-w-[1000px] items-center justify-center min-h-screen overflow-hidden shadow-md">
+          <div className="h-full bg-white p-6 md:p-8 rounded">
+            <h1 className="text-lg md:text-2xl font-bold">練習問題</h1>
+            <p className="text-lg md:text-xl mt-4">{props.question.text}</p>
 
-            <p className="mt-4 text-xs">(日本語訳)</p>
-            <p className="text-xs mt-1">{props.question.translation}</p>
+            <p className="mt-4 text-sm md:text-base">(日本語訳)</p>
+            <p className="text-sm md:text-base mt-1">
+              {props.question.translation}
+            </p>
             <br />
-            <small>選択肢</small>
-            <div className="gap-2">
+            <small className="text-base md:text-lg">選択肢</small>
+            <div className="gap-4 mt-2 md:mt-4">
               {props.choices.map((choice, index) => (
                 <p
                   key={choice.id}
-                  className={`w-full rounded-md ${
+                  className={`w-full rounded-md text-base md:text-lg ${
                     choice.is_correct ? 'text-green-400' : ''
                   }`}
                 >
@@ -114,8 +117,10 @@ const QuestionSection = (props: { question: Question; choices: Choice[] }) => {
             </div>
             <br />
 
-            <small>解説</small>
-            <p className="text-xs">{props.question.commentary}</p>
+            <small className="text-base md:text-lg">解説</small>
+            <p className="text-sm md:text-base mt-2">
+              {props.question.commentary}
+            </p>
           </div>
           <div className="mt-auto">
             <ListeningComponent

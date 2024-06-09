@@ -5,8 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { cn } from '@/lib/utils'
-import { MdMenu } from '@react-icons/all-files/Md/MdMenu'
-import { FiX } from '@react-icons/all-files/Fi/FiX'
+import MenuIcon from '@mui/icons-material/Menu'
+import CloseIcon from '@mui/icons-material/Close'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -52,9 +52,9 @@ const Header = () => {
           onClick={toggleMenu}
         >
           {isOpen ? (
-            <FiX className="h-6 w-6" />
+            <CloseIcon className="h-6 w-6" />
           ) : (
-            <MdMenu className="h-6 w-6" />
+            <MenuIcon className="h-6 w-6" />
           )}
         </button>
       </div>

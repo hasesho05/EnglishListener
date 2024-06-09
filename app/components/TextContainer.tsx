@@ -2,7 +2,7 @@
 
 import { Input } from '@/components/ui/input'
 import React, { useState } from 'react'
-import { IoMdSearch } from '@react-icons/all-files/io/IoMdSearch'
+import SearchIcon from '@mui/icons-material/Search'
 import Image from 'next/image'
 import Link from 'next/link'
 import data from '../data/data.json'
@@ -49,7 +49,7 @@ const TextContainer: React.FC = () => {
         <Input
           type="text"
           placeholder="教材を検索..."
-          startIcon={<IoMdSearch className="text-gray-400" />}
+          startIcon={<SearchIcon className="text-gray-400" />}
         />
 
         <section className="w-full border-b border-gray-300 py-4">
