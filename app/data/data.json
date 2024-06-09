@@ -1,0 +1,190 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "unit_id": 101,
+      "audio_file_src": "/sound/question1.mp3",
+      "thumbnail_src": "/images/202.jpg",
+      "text": "Listen to the audio and choose the best response. \"What is your name?\"",
+      "translation": "音声を聞いて、最適な返答を選んでください。「あなたの名前は何ですか？」",
+      "commentary": "この問題は、基本的な自己紹介の形式を確認するためのものです。正しい答えは「My name is John.」です。",
+      "grade_1": true,
+      "grade_2": false,
+      "grade_3": false,
+      "created_at": "2024-06-06T09:26:08.732941",
+      "updated_at": "2024-06-06T09:26:08.732951"
+    },
+    {
+      "id": 2,
+      "unit_id": 102,
+      "audio_file_src": "/sound/question2.mp3",
+      "thumbnail_src": "/images/202.jpg",
+      "text": "Listen to the audio and choose the correct response. \"Where do you live?\"",
+      "translation": "音声を聞いて、正しい返答を選んでください。「あなたはどこに住んでいますか？」",
+      "commentary": "この問題は、聞き手が相手の居住地を尋ねている場面です。正解は「I live in Tokyo.」です。",
+      "grade_1": false,
+      "grade_2": true,
+      "grade_3": false,
+      "created_at": "2024-06-06T09:26:08.732955",
+      "updated_at": "2024-06-06T09:26:08.732957"
+    },
+    {
+      "id": 3,
+      "unit_id": 103,
+      "audio_file_src": "/sound/question3.mp3",
+      "thumbnail_src": "/images/203.jpg",
+      "text": "Listen to the audio and choose the best response. \"How old are you?\"",
+      "translation": "音声を聞いて、最適な返答を選んでください。「あなたは何歳ですか？」",
+      "commentary": "この問題は、年齢について尋ねる基本的な質問です。正しい答えは「I am 12 years old.」となります。",
+      "grade_1": false,
+      "grade_2": true,
+      "grade_3": false,
+      "created_at": "2024-06-08T10:00:00.000000",
+      "updated_at": "2024-06-08T10:00:00.000000"
+    },
+    {
+      "id": 4,
+      "unit_id": 104,
+      "audio_file_src": "/sound/question4.mp3",
+      "thumbnail_src": "/images/204.jpg",
+      "text": "Listen to the audio and choose the correct response. \"What time is it?\"",
+      "translation": "音声を聞いて、正しい返答を選んでください。「今何時ですか？」",
+      "commentary": "この質問は時間を尋ねるもので、正確な時刻を答える必要があります。正しい答えは「It is 2:30.」です。",
+      "grade_1": false,
+      "grade_2": false,
+      "grade_3": true,
+      "created_at": "2024-06-08T10:05:00.000000",
+      "updated_at": "2024-06-08T10:05:00.000000"
+    }
+  ],
+  "choices": [
+    {
+      "id": 1,
+      "question_id": 1,
+      "text": "My name is John.",
+      "is_correct": true,
+      "created_at": "2024-06-06T09:26:08.733174",
+      "updated_at": "2024-06-06T09:26:08.733179"
+    },
+    {
+      "id": 2,
+      "question_id": 1,
+      "text": "I am fine.",
+      "is_correct": false,
+      "created_at": "2024-06-06T09:26:08.733182",
+      "updated_at": "2024-06-06T09:26:08.733184"
+    },
+    {
+      "id": 3,
+      "question_id": 1,
+      "text": "It is sunny.",
+      "is_correct": false,
+      "created_at": "2024-06-06T09:26:08.733187",
+      "updated_at": "2024-06-06T09:26:08.733189"
+    },
+    {
+      "id": 4,
+      "question_id": 1,
+      "text": "I am 10 years old.",
+      "is_correct": false,
+      "created_at": "2024-06-06T09:26:08.733191",
+      "updated_at": "2024-06-06T09:26:08.733193"
+    },
+    {
+      "id": 5,
+      "question_id": 2,
+      "text": "I live in Tokyo.",
+      "is_correct": true,
+      "created_at": "2024-06-06T09:26:08.733195",
+      "updated_at": "2024-06-06T09:26:08.733197"
+    },
+    {
+      "id": 6,
+      "question_id": 2,
+      "text": "I like apples.",
+      "is_correct": false,
+      "created_at": "2024-06-06T09:26:08.733198",
+      "updated_at": "2024-06-06T09:26:08.733199"
+    },
+    {
+      "id": 7,
+      "question_id": 2,
+      "text": "I am a student.",
+      "is_correct": false,
+      "created_at": "2024-06-06T09:26:08.733201",
+      "updated_at": "2024-06-06T09:26:08.733202"
+    },
+    {
+      "id": 8,
+      "question_id": 2,
+      "text": "It is a cat.",
+      "is_correct": false,
+      "created_at": "2024-06-06T09:26:08.733203",
+      "updated_at": "2024-06-06T09:26:08.733204"
+    },
+    {
+      "id": 9,
+      "question_id": 3,
+      "text": "I am 12 years old.",
+      "is_correct": true,
+      "created_at": "2024-06-08T10:00:00.000000",
+      "updated_at": "2024-06-08T10:00:00.000000"
+    },
+    {
+      "id": 10,
+      "question_id": 3,
+      "text": "I have a bike.",
+      "is_correct": false,
+      "created_at": "2024-06-08T10:00:00.000000",
+      "updated_at": "2024-06-08T10:00:00.000000"
+    },
+    {
+      "id": 11,
+      "question_id": 3,
+      "text": "I like soccer.",
+      "is_correct": false,
+      "created_at": "2024-06-08T10:00:00.000000",
+      "updated_at": "2024-06-08T10:00:00.000000"
+    },
+    {
+      "id": 12,
+      "question_id": 3,
+      "text": "It is 3 o'clock.",
+      "is_correct": false,
+      "created_at": "2024-06-08T10:00:00.000000",
+      "updated_at": "2024-06-08T10:00:00.000000"
+    },
+    {
+      "id": 13,
+      "question_id": 4,
+      "text": "It is 2:30.",
+      "is_correct": true,
+      "created_at": "2024-06-08T10:05:00.000000",
+      "updated_at": "2024-06-08T10:05:00.000000"
+    },
+    {
+      "id": 14,
+      "question_id": 4,
+      "text": "I am happy.",
+      "is_correct": false,
+      "created_at": "2024-06-08T10:05:00.000000",
+      "updated_at": "2024-06-08T10:05:00.000000"
+    },
+    {
+      "id": 15,
+      "question_id": 4,
+      "text": "It is Monday.",
+      "is_correct": false,
+      "created_at": "2024-06-08T10:05:00.000000",
+      "updated_at": "2024-06-08T10:05:00.000000"
+    },
+    {
+      "id": 16,
+      "question_id": 4,
+      "text": "I have a pen.",
+      "is_correct": false,
+      "created_at": "2024-06-08T10:05:00.000000",
+      "updated_at": "2024-06-08T10:05:00.000000"
+    }
+  ]
+}
