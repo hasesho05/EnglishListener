@@ -7,19 +7,10 @@ import { useSearchParams } from 'next/navigation'
 import React, { useState, useEffect } from 'react'
 
 const QuestionSection = (props: { question: Question; choices: Choice[] }) => {
-  const searchParams = useSearchParams()
-  const isCommentaryShown = searchParams.get('isCommentaryShown') === 'true'
-
   const [selectedChoice, setSelectedChoice] = useState<number | null>(null)
   const [showOverlay, setShowOverlay] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
   const [showCommentary, setShowCommentary] = useState(false)
-
-  useEffect(() => {
-    if (isCommentaryShown) {
-      setShowCommentary(true)
-    }
-  }, [isCommentaryShown])
 
   if (!props.question) {
     return <div>Question not found</div>
